@@ -1,0 +1,49 @@
+/* style.css - Fichier CSS personnalisé pour le CV bilingue */
+
+body {
+  background-color: #ffffff; /* gris très clair */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #343a40;
+}
+
+h2, h3 {
+  color: #007bff; /* bleu Bootstrap */
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+img {
+  border: 3px solid #007bff;
+  padding: 5px;
+  background-color: #fff;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Custom section spacing */
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
