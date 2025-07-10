@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M + J</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .heart {
+      width: 300px;
+      height: 270px;
+      background-color: red;
+      position: relative;
+      clip-path: path("M150 270 C-40 150, 60 0, 150 80 C240 0, 340 150, 150 270 Z");
+      animation: beat 1s infinite ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      z-index: 2;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">
+    <div class="text">M + J</div>
+  </div>
+</body>
+</html>
